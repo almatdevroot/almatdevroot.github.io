@@ -10,7 +10,7 @@
     <script>
     var $data;
     $.get('https://api.vk.com/method/wall.get?domain=https://vk.com/omts_kz&count=10&owner_id=-48760195', function(d){
-    $data = JSON.parse(d);
+    $data = d;
     });
     console.log($data);
     </script>
