@@ -11,16 +11,15 @@
 
     xhr.open('GET', 'https://api.vk.com/method/wall.get?domain=https://vk.com/omts_kz&count=10', true);
 
-    xhr.send(); // (1)
+     // (1)
 
-    xhr.onreadystatechange = function() { // (3)
-      if (xhr.readyState != 4) return;
-
-      if (xhr.status == 200) {
-        console.log(xhr.responseText);
-      } 
+    xhr.onload = function() { // (3)
+      
+        console.log(this.responseText);
+     
 
     }
+    xhr.send();
     </script>
 </head>
 <body>
