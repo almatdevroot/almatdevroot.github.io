@@ -16,8 +16,6 @@
     xhr.onreadystatechange = function() { // (3)
       if (xhr.readyState != 4) return;
 
-      button.innerHTML = 'Готово!';
-
       if (xhr.status == 200) {
         console.log(xhr.responseText);
       } 
